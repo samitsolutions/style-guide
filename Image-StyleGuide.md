@@ -2,7 +2,13 @@
 
 
 ## Summary
-At a minimum, make your image filenames (1) five descriptive keywords organized in descending order of importance, (2) all separated by hyphens, and (3) all lower case letters. Some basic examples of this practice are:
+
+- 2-6 descriptive keywords organized in descending order of importance
+- all separated by hyphens, and 
+- all lower case letters. Some basic examples of this practice are: 
+  - website-image-file-name-instructions.jpg
+  - photograph-collection-framed-prints-home.jpg
+  - developer-networking-meeting-norfolk-virginia.jpg
 
 
 An image that is ready to be used on a website will meet these requirements:
