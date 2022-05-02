@@ -11,7 +11,7 @@
   - developer-networking-meeting-norfolk-virginia.jpg
 
 
-An image that is ready to be used on a website will meet these requirements:
+An image that is ready to be used on a website must meet these requirements:
 
 - All lowercase characters.
 - No spaces or underscore characters.
