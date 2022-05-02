@@ -1,3 +1,3 @@
-# Guide
+# Guides
 
-# MUST FOLLOW!
+# Read individual guides and strictly follow all rules.
