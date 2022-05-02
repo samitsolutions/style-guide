@@ -1,1 +1,3 @@
-# style-guide
+# Guide
+
+# MUST FOLLOW!
