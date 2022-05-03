@@ -172,13 +172,13 @@ abbreviations should generally be avoided. Use small names for local scope. Also
 *Right:*
 
 ```js
-var adminUser = db.query('SELECT * FROM users ...');
+var admin_user = db.query('SELECT * FROM users ...');
 ```
 
 *Wrong:*
 
 ```js
-var admin_user = db.query('SELECT * FROM users ...');
+var adminUser = db.query('SELECT * FROM users ...');
 ```
 
 ### Use UpperCamelCase for class names
