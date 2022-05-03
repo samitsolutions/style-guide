@@ -110,8 +110,12 @@ Your opening braces go on the same line as the statement.
 
 ```js
 if (true) {
-  console.log('winning');
+  
+  console.log('winning line 1')
+  console.log('winning line 2')
 }
+
+if(true) console.log("Wining Single Line")
 ```
 
 *Wrong:*
@@ -135,13 +139,13 @@ they make sense.
 *Right:*
 
 ```js
-var keys   = ['foo', 'bar'];
-var values = [23, 42];
+var keys   = ['foo', 'bar']
+var values = [23, 42]
 
-var object = {};
+var object = {}
 while (keys.length) {
-  var key = keys.pop();
-  object[key] = values.pop();
+  var key = keys.pop()
+  object[key] = values.pop()
 }
 ```
 
@@ -188,14 +192,14 @@ Class names should be capitalized using `UpperCamelCase`.
 *Right:*
 
 ```js
-function BankAccount() {
+function bank_account() {
 }
 ```
 
 *Wrong:*
 
 ```js
-function bank_Account() {
+function bankAccount() {
 }
 ```
 
@@ -209,9 +213,9 @@ using all uppercase letters.
 ```js
 var SECOND = 1 * 1000;
 
-function File() {
+function file() {
 }
-File.FULL_PERMISSIONS = 0777;
+
 ```
 
 *Wrong:*
@@ -219,9 +223,6 @@ File.FULL_PERMISSIONS = 0777;
 ```js
 const SECOND = 1 * 1000;
 
-function File() {
-}
-File.fullPermissions = 0777;
 ```
 
 [const]: https://developer.mozilla.org/en/JavaScript/Reference/Statements/const
@@ -307,9 +308,9 @@ Any non-trivial conditions should be assigned to a descriptively named variable 
 *Right:*
 
 ```js
-var isValidPassword = password.length >= 4 && /^(?=.*\d).{4,}$/.test(password);
+var is_valid_password = password.length >= 4 && /^(?=.*\d).{4,}$/.test(password);
 
-if (isValidPassword) {
+if (is_valid_password) {
   console.log('winning');
 }
 ```
@@ -338,7 +339,7 @@ as possible.
 *Right:*
 
 ```js
-function isPercentage(val) {
+function is_percentage(val) {
   if (val < 0) {
     return false;
   }
@@ -371,31 +372,10 @@ Or for this particular example it may also be fine to shorten things even
 further:
 
 ```js
-function isPercentage(val) {
-  var isInRange = (val >= 0 && val <= 100);
-  return isInRange;
+function is_percentage(val) {
+  var is_in_range = (val >= 0 && val <= 100);
+  return is_in_range;
 }
-```
-
-### Name your closures
-
-Feel free to give your closures a name. It shows that you care about them, and
-will produce better stack traces, heap and cpu profiles.
-
-*Right:*
-
-```js
-req.on('end', function onEnd() {
-  console.log('winning');
-});
-```
-
-*Wrong:*
-
-```js
-req.on('end', function() {
-  console.log('losing');
-});
 ```
 
 ### No nested closures
@@ -406,10 +386,10 @@ Use closures, but don't nest them. Otherwise your code will become a mess.
 
 ```js
 setTimeout(function() {
-  client.connect(afterConnect);
+  client.connect(after_connect);
 }, 1000);
 
-function afterConnect() {
+function after_connect() {
   console.log('winning');
 }
 ```
@@ -486,12 +466,12 @@ var matches = item.match(/ID_([^\n]+)=([^\n]+)/));
 // This function has a nasty side effect where a failure to increment a
 // redis counter used for statistics will cause an exception. This needs
 // to be fixed in a later iteration.
-function loadUser(id, cb) {
+function load_user(id, cb) {
   // ...
 }
 
-var isSessionValid = (session.expires < Date.now());
-if (isSessionValid) {
+var is_session_valid = (session.expires < Date.now());
+if (is_session_valid) {
   // ...
 }
 ```
